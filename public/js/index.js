@@ -3,12 +3,13 @@ form.addEventListener('submit', (e) => {
   e.preventDefault();
   const formData = new FormData(form);
   const tweet = formData.get('tweet-text');
-  console.log(tweet);
+  postTweet(tweet);
 });
 
 
 const postTweet = (tweet) => {
-    const ul = document.querySelector('.tweets-list');
+    const ul = document.getElementsByClassName('tweets-list')[0];
+    console.log(ul)
     const today = new Date();
     const time = today.toLocaleTimeString();
     const tweetContent = `

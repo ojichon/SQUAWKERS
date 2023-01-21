@@ -22,6 +22,14 @@ app.get('/', function(req,resp,next) {
 })
 
 
+app.post('/post', (req,resp,next) => {
+    console.log(req.body);
+    form.push(req.body);
+    resp.send({
+        message:"sqweek posted"
+    })
+})
+
 app.listen(3000, ()=> {
     console.log(`server is listening at port ${PORT}`)
 })
