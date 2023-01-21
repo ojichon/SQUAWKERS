@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "admin",
+    "password": "none",
+    "database": "pelican_database",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "admin",
+    "password": "none",
+    "database": "pelican_database",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "admin",
+    "password": "none",
+    "database": "pelican_database",
+    "host": "localhost",
+    "dialect": "postgres"
+  }
+}
