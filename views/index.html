@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" type="image/png" href="pelican.png"/>
+    <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+    <title>Squawker</title>
+    <style>
+        body {
+         font-family: 'Aclonica';font-size: 22px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="tab">
+        <button class="tablinks" onclick="">Profile</button>
+        <button class="tablinks" onclick="">Feed</button>
+        <!-- <button class="tablinks" onclick="">Tokyo</button> -->
+    </div>
+      
+    <header>
+        <h1 class="title">Squawker <img id="pelican" src="pelican.png"></h1>
+    </header>
+    <main class="root-container">
+        <form id="form">
+            <textarea name="tweet-text" rows="10" cols="70" placeholder="Sqweek here..."></textarea><br />
+            <span class="submit">
+                <button>Post</button>
+            </span>
+        </form>
+        <section class="tweets">
+            <ul class="tweets-list">
+                <li class="tweet-item">
+                    <span class="avatar">J</span>
+                    <div class="tweet-details">
+                        <strong class="author">John Doe</strong>
+                        <p class="tweet-text">The most fake tweet</p>
+                        <small class="timestamp">11.00am</small>
+                    </div>
+                  </li> 
+                  <span class="avatar">J</span>
+                  <div class="tweet-details">
+                      <strong class="author">John Doe</strong>
+                      <p class="tweet-text">The most fake tweet</p>
+                      <small class="timestamp">11.00am</small>
+                  </div>
+            </ul>
+        </section>
+    </main>
+    <script src="/js/index.js"></script>
+</body>
+
+</html>
