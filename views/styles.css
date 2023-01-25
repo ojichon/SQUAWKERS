@@ -33,18 +33,19 @@ textarea {
     text-align: right;
 }
 .submit button {
-    padding: 1.2rem;
+    padding: .5rem;
     border-radius: .3rem;
-    width: 10rem;
-    font-size: 1.2rem;
+    width: 7rem;
+    font-size: 1.5rem;
     cursor: pointer;
-    background-color: dodgerblue;
-    box-shadow: 4px 5px 5px #ddd;
-    color: #ddd;
-    opacity: .9;
+    background-color: #6d8095;
+    color: #141E1D;
+    font-family: 'Aclonica';
+    
 }
 .submit button:hover {
     opacity: 1;
+    background-color: rgb(128, 155, 176);
 }
 .tweets {
     width: 100%;
@@ -204,70 +205,30 @@ form{
     align-items: center;
     justify-content: center;
 }
-a.facebook{
-    color: #fff;
-    background-color: #4267b2;
-}
-a.facebook .facebook-icon{
-    height: 28px;
-    width: 28px;
-    color: #0171d3;
-    font-size: 20px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #fff;
-}
-.facebook-icon,
-img.google-img{
-    position: absolute;
-    top: 50%;
-    left: 15px;
-    transform: translateY(-50%);
-}
-img.google-img{
-    height: 20px;
-    width: 20px;
-    object-fit: cover;
-}
-a.google{
-    border: 1px solid #CACACA;
-}
-a.google span{
-    font-weight: 500;
-    opacity: 0.6;
-    color: #232836;
-}
 
 #pelican {
-    width: 10%;
+    width: 6%;
     margin-top: 20px;
 }
-
-.tab {
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #CCD4DD;
-    font-family: 'Aclonica';
-  }
   
- .tab button {
-    background-color: inherit;
-    float: left;
-    border: none;
+ .tabs button {
+    background-color: #CCD4DD;
     outline: none;
     cursor: pointer;
-    padding: 14px 16px;
+    padding: 10px 20px;
     transition: 0.3s;
-    font-size: 15px;
+    font-size: 20px;
+    border: 2px solid #141E1D;
+    font-family: 'Aclonica';
+    border-radius: 10px;
+    margin: 10px 5px 0px 5px;
   }
   
-.tab button:hover {
-    background-color: #ddd;
+.tabs button:hover {
+    background-color: rgb(239, 239, 239);
   }
   
- .tab button.active {
+ .tabs button.active {
     background-color: #ccc;
   }
 
