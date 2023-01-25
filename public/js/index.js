@@ -56,3 +56,8 @@ link.addEventListener("click", e => {
    forms.classList.toggle("show-signup");
 })
 })
+
+
+fetch('https://api.ritekit.com/v1/search/trending?green=1&latin=1')
+  .then((response) => response.json())
+  .then((data) => console.log(data));
