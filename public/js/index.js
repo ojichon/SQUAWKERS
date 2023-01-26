@@ -13,14 +13,25 @@ const postTweet = (tweet) => {
     const today = new Date();
     const time = today.toLocaleTimeString();
     const tweetContent = `
-      <li class="tweet-item">
-        <span class="avatar">A</span>
-        <div class="tweet-details">
-          <strong class="author">Anonymous</strong>
-          <p class="tweet-text">${tweet}</p>
-          <small class="timestamp">${time}</small>
-        </div>
-      </li>
+    <section class="tweets">
+    <ul class="tweets-list">
+        <li class="tweet-item">
+            <span class="avatar">J</span>
+            <div class="tweet-details">
+                <strong class="author">John Doe</strong>
+                <p class="tweet-text">${tweet}</p>
+                <small class="timestamp">${time}</small>
+                <span class="thumbs">
+                    <button type="submit">
+                        <img src="thumbs-up.png">
+                    </button>
+                    <button type="submit">
+                        <img src="thumbs-down.png">
+                    </button>
+                </span>
+            </div>
+    </ul>
+    </section>
     `;
     ul.innerHTML += tweetContent;
   }

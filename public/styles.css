@@ -53,6 +53,7 @@ textarea {
 }
 .tweets {
     width: 115%;
+    max-width:57vw;
 
 }
 ul {
@@ -65,12 +66,13 @@ ul {
     background-color: #CCD4DD;
     border-radius: 10px;
     border: solid black 2px;
+    
 
 }
 .tweet-text {
     margin: .7rem 0 .7rem 0;
     color: #103748;
-    font-size: max(1.8vw,12px); 
+    font-size: max(1.2vw,12px); 
 }
 
 .tweet-details {
@@ -92,14 +94,14 @@ ul {
 }
 .author {
     padding-bottom: 1rem;
-    font-size: max(2.2vw,15px); 
+    font-size: max(1.5vw,15px); 
     overflow: hidden;
     text-overflow: ellipsis;
     color: #103748;
 }
 .timestamp {
     color: rgba(102, 102, 102, 0.59);
-    font-size: max(1.5vw,10px);
+    font-size: max(1vw,10px);
 }
 
 *{
@@ -145,7 +147,7 @@ header {
 
 #background {
     background-image: url("pelican.png");
-    background-size: 70px;
+    background-size: 100gitpx;
     background-repeat: repeat-x space;
 }
 
@@ -257,11 +259,30 @@ form{
 .tabs button:hover {
     background-color: rgb(239, 239, 239);
   }
-  
- .tabs button.active {
+
+.tabs button.active {
     background-color: #ccc;
+ } 
+
+button img {
+    width: 2.5vw;
+    min-width: 20px;
+}
+
+.thumbs button.active {
+    background-color: rgb(143, 185, 216);
  }
 
+.thumbs button:hover {
+    opacity: 1;
+    background-color: rgb(143, 185, 216);
+}
+
+.thumbs button {
+    cursor: pointer;
+    background-color: #6d8095;
+    border-radius: 10px;
+}
 
 
 
