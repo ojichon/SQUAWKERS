@@ -5,7 +5,11 @@ body {
 }
 header {
     text-align: center;
-    font-size: 1.8rem;
+    color: #103748;
+}
+
+.title {
+    font-size: max(5vw,20px);
 }
 .root-container {
     width: 50%;
@@ -27,19 +31,19 @@ textarea {
     font-size: 1.2rem;
     border-radius: 20px;
     background-color: #CCD4DD;
+    width: 125%;
 }
 .submit {
-    width: 100%;
+    width: 125%;
     text-align: right;
 }
 .submit button {
     padding: .5rem;
     border-radius: .3rem;
-    width: 7rem;
-    font-size: 1.5rem;
+    font-size: max(2vw,12px);
     cursor: pointer;
     background-color: #6d8095;
-    color: #141E1D;
+    color: #103748;
     font-family: 'Aclonica';
     
 }
@@ -48,8 +52,8 @@ textarea {
     background-color: rgb(128, 155, 176);
 }
 .tweets {
-    width: 100%;
-    margin-top: 3rem;
+    width: 115%;
+
 }
 ul {
     list-style: none;
@@ -57,27 +61,45 @@ ul {
 .tweet-item {
     display: flex;
     align-items: center;
-    margin: 3rem 0;
+    margin: 2rem 0;
+    background-color: #CCD4DD;
+    border-radius: 10px;
+    border: solid black 2px;
+
 }
 .tweet-text {
-    margin: .7rem 0 0 0;
+    margin: .7rem 0 .7rem 0;
+    color: #103748;
+    font-size: max(1.8vw,12px); 
+}
+
+.tweet-details {
+    overflow-wrap: normal;
 }
 .avatar {
-    background-color: maroon;
+    background-color: #1e5852;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 5rem;
-    height: 5rem;
-    margin-right: 2rem;
-    color: #ddd;
+    width: 6vw;
+    height: 6vw;
+    min-height: 2.5rem;
+    min-width: 2.5rem;
+    margin-right: 1rem;
+    margin-left: .5rem;
+    color: #CCD4DD;
 }
 .author {
     padding-bottom: 1rem;
+    font-size: max(2.2vw,15px); 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #103748;
 }
 .timestamp {
-    color: #666;
+    color: rgba(102, 102, 102, 0.59);
+    font-size: max(1.5vw,10px);
 }
 
 *{
@@ -114,12 +136,19 @@ ul {
     opacity: 0;
     
 }
-header{
+header {
     font-size: 28px;
     font-weight: 600;
     color: #232836;
     text-align: center;
 }
+
+#background {
+    background-image: url("pelican.png");
+    background-size: 70px;
+    background-repeat: repeat-x space;
+}
+
 form{
     margin-top: 30px;
 }
@@ -209,15 +238,16 @@ form{
 #pelican {
     width: 6%;
     margin-top: 20px;
+    min-width: 40px;
 }
-  
+    
  .tabs button {
     background-color: #CCD4DD;
     outline: none;
     cursor: pointer;
     padding: 10px 20px;
     transition: 0.3s;
-    font-size: 20px;
+    font-size: max(1vw, 12px);
     border: 2px solid #141E1D;
     font-family: 'Aclonica';
     border-radius: 10px;
@@ -230,7 +260,10 @@ form{
   
  .tabs button.active {
     background-color: #ccc;
-  }
+ }
+
+
+
 
 @media screen and (max-width: 400px) {
     .form{
@@ -238,3 +271,4 @@ form{
     }
     
 }
+
