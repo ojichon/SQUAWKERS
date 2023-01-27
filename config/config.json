@@ -1,7 +1,7 @@
 {
   "development": {
-    "username": "admin",
-    "password": "none",
+    "username": "postgres",
+    "password": "password",
     "database": "squawkers_database",
     "host": "localhost",
     "dialect": "postgres"
@@ -14,10 +14,10 @@
     "dialect": "postgres"
   },
   "production": {
-    "username": "admin",
-    "password": "none",
-    "database": "squawkers_database",
-    "host": "localhost",
+    "username": "squawkers_user",
+    "password": "NQaoSlynknTUtS9jUV2snM5AzeBMKQtkNQaoSlynknTUtS9jUV2snM5AzeBMKQtk",
+    "database": "squawkers",
+    "host": "dpg-cf9kefcgqg47p3vie890-a",
     "dialect": "postgres"
   }
 }
