@@ -1,6 +1,7 @@
 const express = require('express');
-const { Sequelize } =require('sequelize')
-const sequelize = new sequelize('postgres://squawkers_user:NQaoSlynknTUtS9jUV2snM5AzeBMKQtk@dpg-cf9kefcgqg47p3vie890-a/squawkers')
+const { Sequelize }= require('sequelize');
+const sequelize = new Sequelize('postgres://squawkers_user:NQaoSlynknTUtS9jUV2snM5AzeBMKQtk@dpg-cf9kefcgqg47p3vie890-a/squawkers')
+
 
 const app = express();
 
