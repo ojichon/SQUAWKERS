@@ -1,7 +1,7 @@
 {
   "development": {
-    "username": "admin",
-    "password": "none",
+    "username": "postgres",
+    "password": "password",
     "database": "squawkers_database",
     "host": "localhost",
     "dialect": "postgres"

@@ -18,7 +18,7 @@ const postTweet = (tweet) => {
         <li class="tweet-item">
             <span class="avatar">J</span>
             <div class="tweet-details">
-                <strong class="author">John Doe</strong>
+                <strong class="author">Anonymous</strong>
                 <p class="tweet-text">${tweet}</p>
                 <small class="timestamp">${time}</small>
                 <span class="thumbs">
@@ -69,6 +69,20 @@ link.addEventListener("click", e => {
 })
 
 
+
 fetch('https://api.ritekit.com/v1/search/trending?green=1&latin=1')
-  .then((response) => response.json())
-  .then((data) => console.log(data));
+  .then(response => response.json())
+  .then(data => {
+    console.log(data)
+    let hashArray = data.tags
+ 
+   
+     
+     document.querySelector(".hashtag").innerHTML = hashArray.slice(0,hashArray.length > 10?10: hashArray.length - 1).map((hash)=> hash.tag)
+
+
+    }
+    
+    
+
+  )
