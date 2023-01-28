@@ -29,12 +29,9 @@ app.set('view engine', 'ejs');
 const PORT = 3000;
 
 
-
-
 app.get('/', function(req,resp,next) {
     resp.render('login')
 })
-
 
 app.post('/post', (req,resp,next) => {
     console.log(req.body);
