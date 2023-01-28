@@ -32,7 +32,7 @@ const PORT = 3000;
 
 
 app.get('/', function(req,resp,next) {
-    resp.render('index')
+    resp.render('login')
 })
 
 

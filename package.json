@@ -19,6 +19,7 @@
     "pg": "^8.8.0",
     "random-word-slugs": "^0.1.6",
     "sequelize": "^6.28.0",
+    "sequelize-cli": "^6.6.0",
     "ws": "^8.12.0"
   },
   "devDependencies": {

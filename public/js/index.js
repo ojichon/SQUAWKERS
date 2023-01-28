@@ -71,7 +71,7 @@ link.addEventListener("click", e => {
 })
 
 
-  fetch('https://api.ritekit.com/v1/search/trending?green=1&latin=1%27)
+fetch('https://api.ritekit.com/v1/search/trending?green=1&latin=1%27')
   .then(response => response.json())
   .then(data => {
     console.log(data)
@@ -82,4 +82,6 @@ link.addEventListener("click", e => {
      document.querySelector(".hashtag").innerHTML = hashArray.slice(0,hashArray.length > 10?10: hashArray.length - 1).map((hash)=> hash.tag)
 
 
-    }))
+    })
+  
+
