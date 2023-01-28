@@ -1,3 +1,5 @@
+import { slug } from "username.mjs";
+
 const form = document.querySelector('form');
 form.addEventListener('submit', (e) => {
   e.preventDefault();
@@ -73,7 +75,3 @@ fetch('https://api.ritekit.com/v1/search/trending?green=1&latin=1')
   .then((response) => response.json())
   .then((data) => console.log(data));
 
-
-function popUp() {
-    alert("This is your annonymous username!")
-}
