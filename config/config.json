@@ -15,7 +15,7 @@
   },
   "production": {
     "username": "squawkers_user",
-    "password": "NQaoSlynknTUtS9jUV2snM5AzeBMKQtkNQaoSlynknTUtS9jUV2snM5AzeBMKQtk",
+    "password": "NQaoSlynknTUtS9jUV2snM5AzeBMKQtk",
     "database": "squawkers",
     "host": "dpg-cf9kefcgqg47p3vie890-a",
     "dialect": "postgres"
