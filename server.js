@@ -1,6 +1,17 @@
 const express = require('express');
 const { Sequelize }= require('sequelize');
 const sequelize = new Sequelize('postgres://squawkers_user:NQaoSlynknTUtS9jUV2snM5AzeBMKQtk@dpg-cf9kefcgqg47p3vie890-a/squawkers')
+// const WebSocket = require("ws");
+// const wss = new WebSocket.Server({ port:4000 })
+
+// wss.on("connection", ws => {
+//     console.log("New client connected!");
+
+//     ws.on("close", () => {
+//         console.log("Client has disconnected!");
+//     });
+// });
+
 
 
 const app = express();
@@ -21,7 +32,7 @@ const PORT = 3000;
 
 
 app.get('/', function(req,resp,next) {
-    resp.render('signup')
+    resp.render('index')
 })
 
 

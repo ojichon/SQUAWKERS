@@ -1,4 +1,4 @@
-import { slug } from "username.mjs";
+
 
 const form = document.querySelector('form');
 form.addEventListener('submit', (e) => {
@@ -71,7 +71,15 @@ link.addEventListener("click", e => {
 })
 
 
-fetch('https://api.ritekit.com/v1/search/trending?green=1&latin=1')
-  .then((response) => response.json())
-  .then((data) => console.log(data));
+  fetch('https://api.ritekit.com/v1/search/trending?green=1&latin=1%27)
+  .then(response => response.json())
+  .then(data => {
+    console.log(data)
+    let hashArray = data.tags
+ 
 
+
+     document.querySelector(".hashtag").innerHTML = hashArray.slice(0,hashArray.length > 10?10: hashArray.length - 1).map((hash)=> hash.tag)
+
+
+    }))
